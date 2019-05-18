@@ -12,7 +12,12 @@ function getFact() {
       if (number != "") {
         fact.style.display = "block";
         factText.innerText = data;
+      } else if (number == "") {
+        fact.style.display = "block";
+        factText.innerText = "Please Enter Another Year";
       }
     })
-    .catch(err => console.log(err));
+    .catch(err => {
+      console.log(err);
+    });
 }
