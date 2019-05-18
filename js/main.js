@@ -6,7 +6,7 @@ numberInput.addEventListener("input", getFact);
 
 function getFact() {
   let number = numberInput.value;
-  fetch("http://numbersapi.com/" + number + "/year")
+  fetch("//numbersapi.com/" + number + "/year")
     .then(response => response.text())
     .then(data => {
       if (number != "") {
