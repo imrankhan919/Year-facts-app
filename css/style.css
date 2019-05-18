@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+#fact {
+  display: none;
+}
+.container {
+  height: 90vh;
+}
+
+@keyframes boxAnimation {
+  0% {
+    transform: translateY(-130%);
+  }
+  50% {
+    transform: rotate(xx);
+  }
+  100% {
+    transform: rotate(xx);
+  }
+}
+
+#box {
+  animation: boxAnimation 0.3s forwards 0s ease-in;
+}
